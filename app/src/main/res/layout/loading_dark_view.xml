@@ -1,0 +1,25 @@
+<LinearLayout android:id="@+id/loading_view"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="44dp"
+              android:gravity="center"
+              android:orientation="horizontal">
+
+
+    <RelativeLayout
+        android:id="@+id/loader1"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/loader"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/loder_dark"/>
+    </RelativeLayout>
+
+</LinearLayout>

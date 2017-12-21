@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/editprofile_screen"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lnEventLayer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/event_bg"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/frmProfilePicture"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:padding="15dp">
+
+            <com.dr.app.widgets.CircleImageView
+                android:id="@+id/imgUser"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:src="@drawable/profile_preview" />
+
+            <ImageView
+                android:id="@+id/imgOnline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_active_circle" />
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <com.dr.app.widgets.CTextViewjustsport
+                android:id="@+id/txtUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/color_black"
+                android:textSize="18dp" />
+
+            <com.dr.app.widgets.CTextViewjustsport
+                android:id="@+id/txtmessages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:layout_marginTop="2dp"
+                android:gravity="center|left"
+                android:lines="2"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:text=""
+                android:textColor="@color/textcolor50transblack"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_message"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_message"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/img_accept"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_accept"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/img_reject"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_close"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>

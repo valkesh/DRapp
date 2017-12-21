@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shade"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4.5">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:orientation="vertical"
+            android:weightSum="5.5">
+
+            <com.dr.app.widgets.CTextViewjustsport
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/app_name_label"
+                android:textColor="@color/colorWhite"
+                android:textSize="38dp"
+                customfontdemo:fontName="Native_Land.ttf" />
+
+
+            <com.dr.app.widgets.CTextViewjustsport
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1.2"
+                android:gravity="center"
+                android:text="@string/splace_label_more"
+                android:textColor="@color/colorWhite"
+                android:textSize="20dp"
+                customfontdemo:fontName="Roboto-Light.ttf" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2" />
+
+            <com.dr.app.widgets.CButtonViewOpenSans
+                android:id="@+id/btnSignup"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_selecter"
+                android:gravity="center"
+                android:text="@string/splace_sign_up"
+                android:textColor="@drawable/button_text_selecter"
+                android:textColorHighlight="@color/splace_btn_text_normal"
+                android:textSize="18dp" />
+
+            <com.dr.app.widgets.CButtonViewOpenSans
+                android:id="@+id/btnFacebook"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_selecter"
+                android:gravity="center"
+                android:text="@string/splace_facebook"
+                android:textColor="@drawable/button_text_selecter"
+                android:textSize="18dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3" />
+
+            <com.dr.app.widgets.CTextViewjustsport
+                android:id="@+id/txtSkip"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/splace_skip_for_now"
+                android:textColor="@color/splace_label_text"
+                android:textSize="16dp"
+                customfontdemo:fontName="Roboto-Regular.ttf" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

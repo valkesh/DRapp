@@ -1,0 +1,201 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/editprofile_screen"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/actionbar_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_status_bar"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:src="@drawable/back_black" />
+
+        <com.dr.app.widgets.CButtonViewOpenSans
+            android:layout_width="0dp"
+            android:layout_height="?android:actionBarSize"
+            android:layout_weight="7"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:imeOptions="actionSearch"
+            android:paddingLeft="20dp"
+            android:text="SETTINGS"
+            android:textColor="@color/color_black"
+            android:textSize="20dp"
+            customfontdemo:fontName="OpenSans-CondBold.ttf" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:src="@drawable/back_black"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/lnSwitchPushNotification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/settings_fields_bg"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <com.dr.app.widgets.CTextViewjustsport
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:gravity="center|left"
+                android:paddingLeft="10dp"
+                android:text="Push notification"
+                android:textSize="16dp" />
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center">
+
+                <com.nightonke.jellytogglebutton.JellyToggleButton
+                    android:id="@+id/switchPushNotification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    app:jtbDuration="1000"
+                    app:jtbJelly="itself"
+                    app:jtbLeftBackgroundColor="@color/textcolor50transblack"
+                    app:jtbLeftThumbColor="#FFFFFF"
+                    app:jtbMoveToSameStateCallListener="true"
+                    app:jtbRightBackgroundColor="#65FF20"
+                    app:jtbRightThumbColor="#FFFFFF" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/editprofile_screen_text_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/settings_fields_bg"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <com.dr.app.widgets.CTextViewjustsport
+                android:id="@+id/txtPrivacyPolicy"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:drawableRight="@drawable/event_arrow"
+                android:gravity="center|left"
+                android:paddingLeft="10dp"
+                android:text="Privacy Policy"
+                android:textSize="16dp" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/editprofile_screen_text_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/settings_fields_bg"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <com.dr.app.widgets.CTextViewjustsport
+                android:id="@+id/txtTermsConditions"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:drawableRight="@drawable/event_arrow"
+                android:gravity="center|left"
+                android:paddingLeft="10dp"
+                android:text="Terms &amp; Conditions"
+                android:textSize="16dp" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/editprofile_screen_text_color" />
+
+        <LinearLayout
+            android:id="@+id/lnInviteFriends"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/settings_fields_bg"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <com.dr.app.widgets.CTextViewjustsport
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:drawableRight="@drawable/event_arrow"
+                android:gravity="center|left"
+                android:paddingLeft="10dp"
+                android:text="Invite A Friend"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="@color/editprofile_screen_text_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/settings_fields_bg"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+
+            <com.dr.app.widgets.CTextViewjustsport
+                android:id="@+id/btnSignOut"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:drawableRight="@drawable/event_arrow"
+                android:gravity="center|left"
+                android:paddingLeft="10dp"
+                android:text="Sign Out"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

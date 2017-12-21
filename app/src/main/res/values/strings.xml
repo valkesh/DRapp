@@ -1,0 +1,142 @@
+<resources>
+    <string name="app_name">Quick Doctor</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+    </string>
+    <string name="action_settings">Settings</string>
+
+     <string name="please_check_your_internet_connection">Please check your internet connection.
+    </string>
+
+     <string name="please_enter_your_mobile_no">Please enter your phone number.
+    </string>
+
+    <string name="please_enter_your_country_name">Please select your country.
+    </string>
+
+
+    <!--<string name="google_app_id">253487811093</string>-->
+    <!--<string name="google_app_id">253487811093</string>-->
+    <!--<string name="google_maps_key">AIzaSyCqkg9Vl67QCLUCFvQ-48Eu33qzNKfn2vQ</string>-->
+
+
+
+
+    <string name="google_maps_key">AIzaSyCReCBg6e-iqEWUBCnfdFgzzlin3c38AxI</string>
+    <!--<string name="google_map_key">AIzaSyDuHbXqUk0T_CdQoJHVqUz58Dp5qJgwIhE</string>-->
+    <string name="google_place_api_key">AIzaSyAOTPnGEvRL-wap0ZY59p-FMM5jedogHxI</string>
+
+
+    <string name="facebook_app_id">280504342348736</string>
+    <!--<string name="facebook_app_id">196375210725945</string>-->
+
+    <string name="msg_validation_Please_enter_your_password">Please enter your password.</string>
+    <string name="msg_validation_Please_enter_valid_email_address">Please enter valid email
+        address.
+    </string>
+    <string name="msg_validation_Please_enter_email_address">Please enter email address.</string>
+
+
+    <string name="app_name_label">DR APPOINTMENT SYSTEM</string>
+    <string name="splace_label_more">More friends. More fun. Just join. \n Justsport.</string>
+
+
+    <!--fragment-->
+
+    <string name="home">Home</string>
+    <string name="chat">Chat</string>
+    <string name="post">CreatePost</string>
+    <string name="recent_chat">Recentchat</string>
+    <string name="notification">Notification</string>
+    <string name="userprofile">Profile</string>
+    <string name="isnotuserprofile">IsNotProfile</string>
+    <string name="editprofile">EditProfile</string>
+
+    <string name="createpost">CreatePost</string>
+
+    <string name="editprofile_title">EDIT PROFILE</string>
+    <string name="createpost_title">CREATE POST</string>
+    <string name="editpost_title">EDIT POST</string>
+    <string name="repost_title">REPOST EVENT</string>
+    <string name="select_sport_title">SELECT SPORT</string>
+    <string name="eventdetailsfragment">eventdetailsfragment</string>
+    <string name="eventmorefragment">eventmorefragment</string>
+
+
+    <!--button label text-->
+    <string name="splace_sign_up">SIGN UP/LOGIN</string>
+    <string name="splace_facebook">CONNECT WITH FACEBOOK</string>
+    <string name="splace_skip_for_now">Skip for now</string>
+
+
+    <string name="registration_label">Use your phone number to \n Sign Up</string>
+    <string name="registration_confirmation_label">Enter confirmation code, \n we"'"ve just send you</string>
+    <string name="registration_confirm_btn">CONFIRM</string>
+    <string name="registration_confirm_resend_btn">Haven"'"t recevied it? Try</string>
+    <string name="registration_confirm_resend_btn_one">Resend code</string>
+
+
+    <string name="registration_info_your_name">Your name</string>
+    <string name="registration_info_label">Please enter your name and \nadd your profile image</string>
+
+    <string name="registration_info_sex">Sex</string>
+    <string name="registration_info_bio">Bio</string>
+    <string name="registration_info_bio_female"> Female</string>
+    <string name="registration_info_bio_male"> Male</string>
+    <string name="registration_info_create_your_prfoile"> CREATE YOUR ACCOUNT</string>
+
+    <string name="your_profile_title">YOUR PROFILE</string>
+    <string name="your_profile_dis">To use Justsport app you"'"ll need to Sign Up. You can join to sport events, create your own and chat with other users. </string>
+    <string name="your_profile_signup_btn">SIGN UP/LOGIN</string>
+    <string name="event_description_hint">Describe event to users, what kind of players \nyou"'"re looking for, some other important \ninformations</string>
+
+    <!--validation messages create event post-->
+
+    <string name="not_login">You need to join with Justsport.</string>
+
+    <string name="post_event_title">Please enter your event title.</string>
+    <string name="post_event_disc">Please enter your event description.</string>
+    <string name="post_event_sport">Please select your event sport.</string>
+    <string name="post_event_sport_vacancy">Please select at least one vacancy.</string>
+    <string name="post_event_date">Please select your event date.</string>
+    <string name="post_event_time">Please select your event time.</string>
+    <string name="post_event_address">Please select your event address.</string>
+    <string name="post_event_image">Please upload your event"'"s image.</string>
+
+    <string name="txt_logout_confirm">Are you sure you want to logout?</string>
+    <string name="txt_cancel">Cancel</string>
+    <string name="txt_logout">Logout</string>
+
+
+
+    <string name="dr_app_name_label">Welcome to \n Royal Parkside Animal Hospital</string>
+    <string name="dr_splace_label_more">A family taking care of your beloved pet.</string>
+
+
+    <string name="homedr">Home</string>
+    <string name="chatdr">Chat</string>
+    <string name="postdr">Request Appointment</string>
+    <string name="recent_chatdr">Recentchat</string>
+    <string name="notificationdr">Notification</string>
+    <string name="userprofiledr">Profile</string>
+    <string name="isnotuserprofiledr">IsNotProfile</string>
+    <string name="editprofiledr">EditProfile</string>
+    <string name="createpostdr">CreatePost</string>
+
+    <string name="dr_appointment_phone_number">Phone number</string>
+    <string name="dr_appointment_email">Email</string>
+
+    <!--DR, Validation messages-->
+    <string name="dr_post_event_name">Please enter your name.</string>
+    <string name="dr_post_event_number">Please enter your mobile number.</string>
+    <string name="dr_post_event_email">Please enter your email.</string>
+    <string name="dr_post_event_valid_email">Please enter valid email.</string>
+    <string name="dr_post_event_desc">Please enter your pet"'"s description.</string>
+    <string name="dr_post_event_date">Please select your prefer date.</string>
+    <string name="dr_post_event_time">Please select your prefer time.</string>
+    <string name="dr_post_event_patient_type">Please select patient type.</string>
+
+
+</resources>
+
+

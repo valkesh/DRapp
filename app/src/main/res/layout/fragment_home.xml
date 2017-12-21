@@ -1,0 +1,417 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/editprofile_screen"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+
+    <LinearLayout
+        android:id="@+id/actionbar_root"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/status_bar"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:padding="5dp"
+            android:src="@drawable/request" />
+
+        <com.dr.app.widgets.CTextViewjustsport
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:gravity="center"
+            android:text="Justsport"
+            android:textColor="@color/splace_btn_text_hightlight"
+            android:textSize="40dp"
+            customfontdemo:fontName="Native_Land.ttf" />
+
+        <ImageView
+            android:id="@+id/imgSearch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:src="@drawable/search" />
+
+    </LinearLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/hockey"
+                android:orientation="horizontal"
+                android:paddingBottom="12dp"
+                android:paddingTop="10dp"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:id="@+id/lnCountOne"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="2.8"
+                    android:orientation="vertical">
+
+                    <com.dr.app.widgets.CTextViewjustsport
+                        android:id="@+id/txtGameName"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="4"
+                        android:lines="3"
+                        android:text="ICE HOCKEY"
+                        android:textColor="@color/textcolor"
+                        android:textSize="24dp"
+                        customfontdemo:fontName="OpenSans-CondBold.ttf" />
+
+                    <com.dr.app.widgets.CTextViewjustsport
+                        android:id="@+id/txtGameEventNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/home_arrow"
+                        android:gravity="center|left"
+                        android:text="0 EVENTS"
+                        android:textColor="@color/textcolor50transblack"
+                        android:textSize="16dp"
+                        customfontdemo:fontName="OpenSans-CondBold.ttf" />
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/sport_one"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7.2"
+                    android:scrollbars="horizontal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/basketball"
+                android:orientation="horizontal"
+                android:paddingBottom="12dp"
+                android:paddingTop="10dp"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:id="@+id/lnCountTwo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="2.8"
+                    android:orientation="vertical">
+
+                    <com.dr.app.widgets.CTextViewjustsport
+                        android:id="@+id/txtGameNameTwo"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="4"
+                        android:lines="3"
+                        android:text="BASKET BALL"
+                        android:textColor="@color/textcolor"
+                        android:textSize="24dp"
+                        customfontdemo:fontName="OpenSans-CondBold.ttf" />
+
+                    <com.dr.app.widgets.CTextViewjustsport
+                        android:id="@+id/txtGameEventNoTwo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/home_arrow"
+                        android:gravity="center|left"
+                        android:text="0 EVENTS"
+                        android:textColor="@color/textcolor50transblack"
+                        android:textSize="16dp"
+                        customfontdemo:fontName="OpenSans-CondBold.ttf" />
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/sport_two"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7.2"
+                    android:scrollbars="horizontal" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/beach"
+                android:orientation="horizontal"
+                android:paddingBottom="12dp"
+                android:paddingTop="10dp"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:id="@+id/lnCountThree"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="2.8"
+                    android:orientation="vertical">
+
+                    <com.dr.app.widgets.CTextViewjustsport
+                        android:id="@+id/txtGameNameThree"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="4"
+                        android:lines="3"
+                        android:text="BEACH VOLLEY BALL"
+                        android:textColor="@color/textcolor"
+                        android:textSize="24dp"
+                        customfontdemo:fontName="OpenSans-CondBold.ttf" />
+
+                    <com.dr.app.widgets.CTextViewjustsport
+                        android:id="@+id/txtGameEventNoThree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/home_arrow"
+                        android:gravity="center|left"
+                        android:text="0 EVENTS"
+                        android:textColor="@color/textcolor50transblack"
+                        android:textSize="16dp"
+                        customfontdemo:fontName="OpenSans-CondBold.ttf" />
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/sport_three"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7.2"
+                    android:scrollbars="horizontal" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/football_old"
+                android:orientation="horizontal"
+                android:paddingBottom="12dp"
+                android:paddingTop="10dp"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:id="@+id/lnCountFour"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="2.8"
+                    android:orientation="vertical">
+
+                    <com.dr.app.widgets.CTextViewjustsport
+                        android:id="@+id/txtGameNameFour"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="4"
+                        android:lines="3"
+                        android:text="FOOT BALL"
+                        android:textColor="@color/textcolor"
+                        android:textSize="24dp"
+                        customfontdemo:fontName="OpenSans-CondBold.ttf" />
+
+                    <com.dr.app.widgets.CTextViewjustsport
+                        android:id="@+id/txtGameEventNoFour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/home_arrow"
+                        android:gravity="center|left"
+                        android:text="0 EVENTS"
+                        android:textColor="@color/textcolor50transblack"
+                        android:textSize="16dp"
+                        customfontdemo:fontName="OpenSans-CondBold.ttf" />
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/sport_four"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7.2"
+                    android:scrollbars="horizontal" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/baseball"
+                android:orientation="horizontal"
+                android:paddingBottom="12dp"
+                android:paddingTop="10dp"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:id="@+id/lnCountFive"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="2.8"
+                    android:orientation="vertical">
+
+                    <com.dr.app.widgets.CTextViewjustsport
+                        android:id="@+id/txtGameNameFive"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="4"
+                        android:lines="3"
+                        android:text="BASE BALL"
+                        android:textColor="@color/textcolor"
+                        android:textSize="24dp"
+                        customfontdemo:fontName="OpenSans-CondBold.ttf" />
+
+                    <com.dr.app.widgets.CTextViewjustsport
+                        android:id="@+id/txtGameEventNoFive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/home_arrow"
+                        android:gravity="center|left"
+                        android:text="0 EVENTS"
+                        android:textColor="@color/textcolor50transblack"
+                        android:textSize="16dp"
+                        customfontdemo:fontName="OpenSans-CondBold.ttf" />
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/sport_five"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7.2"
+                    android:scrollbars="horizontal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/soccer"
+                android:orientation="horizontal"
+                android:paddingBottom="12dp"
+                android:paddingTop="10dp"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:id="@+id/lnCountSix"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="2.8"
+                    android:orientation="vertical">
+
+                    <com.dr.app.widgets.CTextViewjustsport
+                        android:id="@+id/txtGameNameSix"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="4"
+                        android:lines="3"
+                        android:text="SOCCER"
+                        android:textColor="@color/textcolor"
+                        android:textSize="24dp"
+                        customfontdemo:fontName="OpenSans-CondBold.ttf" />
+
+                    <com.dr.app.widgets.CTextViewjustsport
+                        android:id="@+id/txtGameEventNoSix"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/home_arrow"
+                        android:gravity="center|left"
+                        android:text="0 EVENTS"
+                        android:textColor="@color/textcolor50transblack"
+                        android:textSize="16dp"
+                        customfontdemo:fontName="OpenSans-CondBold.ttf" />
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/sport_six"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7.2"
+                    android:scrollbars="horizontal" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lnOtherSport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/editprofile_screen"
+                android:orientation="horizontal"
+                android:paddingBottom="12dp"
+                android:paddingTop="10dp"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="2.8"
+                    android:orientation="vertical">
+
+                    <com.dr.app.widgets.CTextViewjustsport
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="4"
+                        android:lines="3"
+                        android:text="OTHER SPORT"
+                        android:textColor="@color/textcolor"
+                        android:textSize="24dp"
+                        customfontdemo:fontName="OpenSans-CondBold.ttf" />
+
+                    <com.dr.app.widgets.CTextViewjustsport
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:drawablePadding="10dp"
+                        android:gravity="center|left"
+                        android:textColor="@color/textcolor50transblack"
+                        android:textSize="16dp"
+                        customfontdemo:fontName="OpenSans-CondBold.ttf" />
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7.2"
+                    android:scrollbars="horizontal" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+

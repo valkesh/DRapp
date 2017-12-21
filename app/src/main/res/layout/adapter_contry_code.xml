@@ -1,0 +1,23 @@
+<LinearLayout
+    android:id="@+id/LinearLayout1"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:background="@color/splace_label_text"
+    android:weightSum="100">
+
+    <com.dr.app.widgets.CTextViewjustsport
+        android:id="@+id/labelContry"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:textSize="20dp"
+        android:gravity="left|center"
+        android:paddingLeft="10dp"
+        customfontdemo:fontName="Roboto-Regular.ttf"
+        android:background="@color/splace_label_text"
+        android:textColor="@color/colorWhite"/>
+</LinearLayout>

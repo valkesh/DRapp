@@ -1,0 +1,253 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/back_black" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <com.dr.app.widgets.CircleImageView
+                        android:id="@+id/imgProfile"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:padding="10dp"
+                        android:src="@drawable/img_add_upload" />
+
+                    <com.dr.app.widgets.CTextViewjustsport
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="7"
+                        android:gravity="center|left"
+                        android:padding="5dp"
+                        customfontdemo:fontName="SFUIDisplay-Light.ttf"
+                        android:text="@string/registration_info_label"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/splace_label_text" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:weightSum="10">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        style="@style/EdittextStyle"
+                        android:layout_weight="10">
+
+                        <com.dr.app.widgets.CEditTextViewjustsport
+                            android:id="@+id/edtUsername"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:hint="@string/registration_info_your_name"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:textColor="@color/colorWhite"
+                            android:textColorHint="@color/editprofile_screen_text_color"
+                            android:textSize="16dp"
+                            customfontdemo:fontName="SFUIText-Regular.ttf" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/splace_label_text" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <com.dr.app.widgets.CTextViewjustsport
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:gravity="center|left"
+                        android:text="@string/registration_info_sex"
+                        android:textColor="@color/editprofile_screen_text_color"
+                        android:textSize="16dp"
+                        customfontdemo:fontName="SFUIText-Regular.ttf" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:id="@+id/lnFemale"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imgFemale"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_reg_female_off" />
+
+                            <com.dr.app.widgets.CTextViewjustsport
+                                android:id="@+id/btnFemale"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent"
+                                android:gravity="center"
+                                android:text="@string/registration_info_bio_female"
+                                android:textColor="@color/editprofile_screen_text_color"
+                                android:textSize="16dp"
+                                customfontdemo:fontName="SFUIText-Regular.ttf" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lnMale"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imgMale"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="5dp"
+                                android:src="@drawable/ic_reg_male_off" />
+
+                            <com.dr.app.widgets.CTextViewjustsport
+                                android:id="@+id/btnMale"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:gravity="center|left"
+                                android:text="@string/registration_info_bio_male"
+                                android:textColor="@color/editprofile_screen_text_color"
+                                android:textSize="16dp"
+                                customfontdemo:fontName="SFUIText-Regular.ttf" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/splace_label_text" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        style="@style/EdittextStyle"
+                        android:layout_weight="10">
+
+                        <com.dr.app.widgets.CEditTextViewjustsport
+                            android:id="@+id/edtBio"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="11dp"
+                            android:background="@android:color/transparent"
+                            android:gravity="left"
+                            android:maxLines="5"
+                            android:text=""
+                            android:paddingTop="10dp"
+                            android:hint="@string/registration_info_bio"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="16dp"
+                            android:textColorHint="@color/editprofile_screen_text_color"
+                            customfontdemo:fontName="SFUIText-Regular.ttf" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <com.dr.app.widgets.CButtonViewOpenSans
+                    android:id="@+id/btnCreateAccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button_selecter"
+                    android:text="@string/registration_info_create_your_prfoile"
+                    android:textColor="@drawable/button_text_selecter"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>

@@ -1,0 +1,41 @@
+<LinearLayout
+    android:id="@+id/actionbar_root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@drawable/status_bar"
+    android:orientation="horizontal"
+    android:weightSum="10">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"/>
+
+    <com.dr.app.widgets.CTextViewjustsport
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="Justsport"
+        android:textColor="@color/splace_btn_text_hightlight"
+        android:textSize="30dp"
+        android:layout_weight="6"/>
+
+    <ImageView
+        android:id="@+id/ic_main_search"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/search"
+        android:layout_weight="2"/>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+

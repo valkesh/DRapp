@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/editprofile_screen"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lnMianLayer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/event_bg"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="2.5"
+            android:padding="15dp">
+
+            <com.dr.app.widgets.CircleImageView
+                android:id="@+id/imgUserImage"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:src="@drawable/profile_preview" />
+
+            <ImageView
+                android:id="@+id/imgStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_active_circle" />
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <com.dr.app.widgets.CTextViewjustsport
+                android:id="@+id/txtUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/color_black"
+                android:textSize="18dp" />
+
+            <com.dr.app.widgets.CTextViewjustsport
+                android:id="@+id/txtMessages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:layout_marginTop="2dp"
+                android:gravity="center|left"
+                android:lines="2"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:text=""
+                android:textColor="@color/textcolor50transblack"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgEvent"
+                    android:layout_width="80dp"
+                    android:layout_height="52dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_notification_event_base" />
+
+                <ImageView
+                    android:id="@+id/imgPreview"
+                    android:layout_width="80dp"
+                    android:layout_height="52dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:visibility="gone"
+                    android:background="@drawable/ic_notification_delete"
+                    android:src="@drawable/ic_notification_delete" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,253 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/editprofile_screen"
+              android:orientation="vertical"
+              android:weightSum="10">
+
+
+    <LinearLayout
+            android:id="@+id/actionbar_root"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#E54C3C"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+        <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:padding="5dp"
+                android:visibility="invisible"
+                android:src="@drawable/request"/>
+
+        <com.dr.app.widgets.CTextViewjustsport
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textColor="#FFFFFF"
+                android:textSize="32dp"
+                customfontdemo:fontName="Native_Land.ttf"/>
+
+        <ImageView
+                android:id="@+id/imgShare"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:visibility="visible"
+                android:src="@drawable/ic_share"/>
+    </LinearLayout>
+
+
+    <ScrollView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="10"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="#E54C3C"
+                    android:weightSum="5"
+                    android:orientation="vertical">
+
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2.6"
+                        android:background="#E54C3C"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/profile_image"
+                            android:layout_width="108dp"
+                            android:layout_height="108dp"
+                            android:src="@drawable/vinod"
+                            />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.2"
+                        android:background="#E54C3C"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:text="Dr, Vinod Patel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18dp"
+                            />
+
+                    <TextView
+                            android:text="Barrie Veterinarian | Royal Parkside Animal Hospital | (705) 503-7724"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16dp"
+                            android:layout_weight="1"
+                            />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+
+                    <LinearLayout
+                            android:id="@+id/lnActionCall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:translationZ="2dp"
+                            android:gravity="center">
+
+                        <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:visibility="visible"
+                                android:layout_gravity="center"
+                                android:background="@drawable/profile_img_placeholder_dr"
+                                android:src="@drawable/ic_phone"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                            android:id="@+id/lnActionMail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="5dp"
+                            android:translationZ="2dp"
+                            android:gravity="center">
+
+                        <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:visibility="visible"
+                                android:layout_gravity="center"
+                                android:background="@drawable/profile_img_placeholder_dr"
+                                android:src="@drawable/ic_email"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                            android:id="@+id/lnActionLocation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:translationZ="2dp"
+                            android:gravity="center">
+
+                        <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:visibility="visible"
+                                android:layout_gravity="center"
+                                android:background="@drawable/profile_img_placeholder_dr"
+                                android:src="@drawable/ic_location"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:id="@+id/lnActionChat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:translationZ="2dp"
+                            android:gravity="center">
+
+                        <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:visibility="visible"
+                                android:layout_gravity="center"
+                                android:background="@drawable/profile_img_placeholder_dr"
+                                android:src="@drawable/ic_facebook"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:text="About me"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center|left"
+                        android:textColor="#20252B"
+                        android:textSize="16dp"
+                        android:layout_margin="10dp"
+                        android:background="@null"
+                        android:translationZ="2dp"
+                        android:layout_weight="1"/>
+
+                <TextView
+                        android:text="Dr. Vinod Patel is the owner of Royal Parkside Animal Hospital and He is the veterinarian that our patients see. Dr. Patel grew up with lots of dairy animals in farmer family. He loved to work with animals and was inspired by the animal love to become vet. He spent a lot of time working on neighboring farms and helping the animals in his life and wanted to become a surgeon."
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center|left"
+                        android:textColor="#20252B"
+                        android:textSize="16dp"
+                        android:background="@null"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+

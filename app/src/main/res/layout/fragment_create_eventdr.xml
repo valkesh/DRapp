@@ -1,0 +1,265 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/editprofile_screen"
+              android:orientation="vertical"
+              android:weightSum="10">
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:background="#E54C3C"
+            android:orientation="horizontal"
+            android:id="@+id/mainLayer"
+            android:weightSum="10">
+
+        <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:visibility="invisible"
+                android:src="@drawable/back_black"/>
+
+
+        <com.dr.app.widgets.CTextViewjustsport
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:gravity="center"
+                android:text="@string/postdr"
+                android:textSize="20dp"
+                android:textColor="#FFFFFF"
+                customfontdemo:fontName="OpenSans-CondBold.ttf"/>
+
+        <ImageView
+                android:id="@+id/btnDone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:src="@drawable/ic_done"
+                android:visibility="invisible"/>
+
+    </LinearLayout>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+            <com.dr.app.widgets.CEditTextViewjustsport
+                    android:id="@+id/edtName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:minHeight="50dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="left|center"
+                    android:hint="Name"
+                    customfontdemo:fontName="Roboto-Regular.ttf"
+                    android:textColor="@color/color_black"
+                    android:textColorHint="#4D000000"
+                    android:textSize="20dp"/>
+
+
+            <com.dr.app.widgets.CEditTextViewjustsport
+                    android:id="@+id/edtNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:minHeight="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="left|center"
+                    customfontdemo:fontName="Roboto-Regular.ttf"
+                    android:hint="@string/dr_appointment_phone_number"
+                    android:textColor="@color/color_black"
+                    android:textColorHint="#4D000000"
+                    android:inputType="number"
+                    android:textSize="20dp"/>
+
+            <com.dr.app.widgets.CEditTextViewjustsport
+                    android:id="@+id/edtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:minHeight="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="left|center"
+                    customfontdemo:fontName="Roboto-Regular.ttf"
+                    android:hint="@string/dr_appointment_email"
+                    android:textColor="@color/color_black"
+                    android:textColorHint="#4D000000"
+                    android:textSize="20dp"/>
+
+
+            <LinearLayout
+                    android:id="@+id/lnDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="72dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/fields_base"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp">
+
+                <com.dr.app.widgets.CTextViewjustsport
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:text="Preferred Date"
+                        customfontdemo:fontName="OpenSans-CondBold.ttf"
+                        android:textColor="@color/splace_btn_text_hightlight"
+                        android:textSize="17dp"/>
+
+                <com.dr.app.widgets.CTextViewjustsport
+                        android:id="@+id/txtDateLabel"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@drawable/event_arrow"
+                        android:gravity="center|right"
+                        android:text="Select date"
+                        android:textColor="@color/textcolor50transblack"
+                        android:textSize="14dp"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                    android:id="@+id/lnDateofTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="72dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/fields_base"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp">
+
+                <com.dr.app.widgets.CTextViewjustsport
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:text="Preferred Time Of Day"
+                        customfontdemo:fontName="OpenSans-CondBold.ttf"
+                        android:textColor="@color/splace_btn_text_hightlight"
+                        android:textSize="17dp"/>
+
+                <com.dr.app.widgets.CTextViewjustsport
+                        android:id="@+id/txtPreferlabel"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@drawable/event_arrow"
+                        android:gravity="center|right"
+                        android:text="Select time"
+                        android:textColor="@color/textcolor50transblack"
+                        android:textSize="14dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/lnCustomer"
+                    android:layout_width="match_parent"
+                    android:layout_height="72dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/fields_base"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp">
+
+                <com.dr.app.widgets.CTextViewjustsport
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:text="Patient Type"
+                        customfontdemo:fontName="OpenSans-CondBold.ttf"
+                        android:textColor="@color/splace_btn_text_hightlight"
+                        android:textSize="17dp"/>
+
+                <com.dr.app.widgets.CTextViewjustsport
+                        android:id="@+id/txtPatientlabel"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@drawable/event_arrow"
+                        android:gravity="center|right"
+                        android:text="Select type"
+                        android:textColor="@color/textcolor50transblack"
+                        android:textSize="14dp"/>
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:background="@drawable/fields_base"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:paddingLeft="5dp">-->
+
+                <!--<me.gujun.android.taggroup.TagGroup-->
+                        <!--android:id="@+id/tag_group"-->
+                        <!--style="@style/TagGroup"-->
+                        <!--android:layout_gravity="center"/>-->
+            <!--</LinearLayout>-->
+
+
+            <LinearLayout
+                    android:id="@+id/lnComment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/fields_base"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:paddingLeft="5dp">
+
+
+                <com.dr.app.widgets.CEditTextViewjustsport
+                        android:id="@+id/edtEventDesc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@android:color/transparent"
+                        android:gravity="left"
+                        customfontdemo:fontName="Roboto-Regular.ttf"
+                        android:hint="Comments"
+                        android:textColor="@color/color_black"
+                        android:textColorHint="@color/textcolor50transblack"
+                        android:maxLines="4"
+                        android:minHeight="100dp"
+                        android:textSize="20dp"/>
+
+
+            </LinearLayout>
+
+
+
+
+            <com.dr.app.widgets.CButtonViewOpenSans
+                    android:id="@+id/btnPublish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/button_selecter_dr"
+                    android:gravity="center"
+                    android:text="SEND"
+                    android:translationZ="2dp"
+                    android:textColor="@drawable/sendbtnselector"
+                    android:textSize="20dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

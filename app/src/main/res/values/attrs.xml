@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="MyTextView">
+        <attr name="fontName" format="string"/>
+    </declare-styleable>
+
+
+
+    <!-- CircularImageView for custom shape -->
+    <declare-styleable name="CircularImageView">
+
+        <!-- Specifies whether or not to draw a circular border around the image. -->
+        <attr name="border" format="boolean"></attr>
+        <!-- Specifies the color of the border draw around the image. (if enabled) -->
+        <attr name="border_color" format="color"></attr>
+        <!-- Makes the border this pixels wide. (if enabled) -->
+        <attr name="border_width" format="dimension"></attr>
+        <!-- Specifies whether or not to draw a selector on this view upon touch events. -->
+        <attr name="selector" format="boolean"></attr>
+        <!-- Specifies the color of the selector draw on top of the image upon touch events. (if enabled) -->
+        <attr name="selector_color" format="color"></attr>
+        <!-- Specifies the color of the selector stroke drawn around the image upon touch events. Be sure to provide some opacity. (if enabled) -->
+        <attr name="selector_stroke_color" format="color"></attr>
+        <!-- Makes the selector stroke drawn around the image upon touch events this pixels wide. (if enabled) -->
+        <attr name="selector_stroke_width" format="dimension"></attr>
+        <!-- Specifies whether or not to draw a shadow around your circular image. -->
+        <attr name="shadow" format="boolean"></attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="LoadingView">
+    </declare-styleable>
+
+
+    <declare-styleable name="CustomCircularImageViewTheme">
+        <attr name="circularImageViewStyle" format="reference"/>
+    </declare-styleable>
+
+
+
+
+
+    <declare-styleable name="ParallaxScroll">
+        <attr name="parallax_factor" format="float"/>
+        <attr name="alpha_factor" format="float"/>
+        <attr name="inner_parallax_factor" format="float"/>
+        <attr name="parallax_views_num" format="integer"/>
+        <attr name="circular_parallax" format="boolean"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="refresh_PullRefreshLayout">
+        <attr name="refreshType" format="enum">
+            <enum name="material" value="0" />
+            <enum name="circles" value="1" />
+            <enum name="water_drop" value="2" />
+            <enum name="ring" value="3" />
+            <enum name="smartisan" value="4" />
+        </attr>
+        <attr name="refreshColors" format="reference"/>
+        <attr name="refreshColor" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="PinView">
+        <attr name="numberPinBoxes"     format="integer"/>
+        <attr name="password"           format="boolean"/>
+        <attr name="numberCharacters"   format="integer"/>
+        <attr name="titles"             format="reference"/>
+        <attr name="split"              format="string"/>
+        <attr name="deleteOnClick"      format="boolean"/>
+        <attr name="keyboardMandatory"  format="boolean"/>
+        <attr name="nativePinBox"       format="boolean"/>
+        <attr name="drawablePinBox"     format="reference"/>
+        <attr name="colorTextPinBox"    format="color"/>
+        <attr name="colorTextTitles"    format="color"/>
+        <attr name="colorSplit"         format="color"/>
+        <attr name="textSizePinBox"     format="dimension"/>
+        <attr name="textSizeTitles"     format="dimension"/>
+        <attr name="sizeSplit"          format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+
+
+
+</resources>

@@ -1,0 +1,136 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    xmlns:pinview="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_black" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.dr.app.widgets.CTextViewjustsport
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="60dp"
+                    android:layout_marginTop="60dp"
+                    android:gravity="center"
+                    android:text="@string/registration_confirmation_label"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="24sp"
+                    customfontdemo:fontName="Roboto-Light.ttf" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?android:actionBarSize"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.dr.app.widgets.CEditTextViewjustsport
+                        android:id="@+id/edtconform"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/dotted_line"
+                        android:gravity="left"
+                        android:hint="000000"
+                        android:inputType="number"
+                        android:letterSpacing="0.72"
+                        android:maxLength="6"
+                        android:textColor="@color/colorWhite"
+                        android:textColorHint="@color/colorWhite"
+                        android:textSize="40sp"
+                        customfontdemo:fontName="Roboto-Light.ttf"
+                        style="@style/EdittextwhiteStyle"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/dotted_line"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+
+                <LinearLayout
+                    android:id="@+id/lnResend"
+                    android:layout_width="match_parent"
+                    android:layout_height="?android:actionBarSize"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <com.dr.app.widgets.CTextViewjustsport
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/registration_confirm_resend_btn"
+                        android:textColor="@color/colorWhite"
+                        customfontdemo:fontName="Roboto-Regular.ttf"
+                        android:textSize="14sp" />
+
+                    <com.dr.app.widgets.CTextViewjustsport
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:text="@string/registration_confirm_resend_btn_one"
+                        android:textColor="@color/colorWhite"
+                        customfontdemo:fontName="Roboto-Regular.ttf"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <com.dr.app.widgets.CButtonViewOpenSans
+                    android:id="@+id/btnConfirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button_selecter"
+                    android:text="@string/registration_confirm_btn"
+                    android:textColor="@drawable/button_text_selecter"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>

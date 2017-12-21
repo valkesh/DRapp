@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tablayout"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <com.dr.app.widgets.CTextViewjustsport
+        android:id="@+id/tab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="   "
+        android:textColor="@color/color_black"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        customfontdemo:fontName="OpenSans-CondBold.ttf" />
+
+    <FrameLayout
+        android:id="@+id/frameBadge"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_alignRight="@+id/tab"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:visibility="invisible"
+        android:background="@drawable/tab_notification" >
+
+        <TextView
+            android:id="@+id/imgTab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:text="3"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"/>
+    </FrameLayout>
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+

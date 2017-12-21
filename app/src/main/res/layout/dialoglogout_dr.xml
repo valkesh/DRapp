@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/transparent"
+              android:orientation="vertical"
+              android:padding="10dp">
+
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:weightSum="10">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|center"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="24dp"
+                    android:text="We will contact you shortly via email or sms."/>
+
+
+            <TextView
+                    android:id="@+id/txtCallAction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:text="If our system will not be responds in 2 hours then you can call us to helpline number (705) 503-7724  "/>
+
+            <com.dr.app.widgets.CButtonViewOpenSans
+                    android:id="@+id/btnDone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button_selecter_dr"
+                    android:gravity="center"
+                    android:text="DONE"
+                    android:layout_marginTop="30dp"
+                    android:textColor="@drawable/sendbtnselector"
+                    android:textSize="20dp"/>
+
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

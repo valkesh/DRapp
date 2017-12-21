@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/LinearLayout1"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+            android:id="@+id/lnEventLayer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:weightSum="10">
+
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+            <com.dr.app.widgets.CTextViewjustsport
+                    android:id="@+id/txtDayName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:text="Monday"
+                    android:gravity="left"
+                    android:textColor="@color/textcolor"
+                    android:textSize="12dp"
+                    customfontdemo:fontName="Roboto-Regular.ttf"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+            <com.dr.app.widgets.CTextViewjustsport
+                    android:id="@+id/txtStartTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Monday"
+                    android:gravity="left"
+                    android:textColor="@color/textcolor"
+                    android:textSize="12dp"
+                    customfontdemo:fontName="Roboto-Regular.ttf"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+            <com.dr.app.widgets.CTextViewjustsport
+                    android:id="@+id/txtTo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:text="To"
+                    android:gravity="center"
+                    android:textColor="@color/textcolor"
+                    android:textSize="12dp"
+                    customfontdemo:fontName="Roboto-Regular.ttf"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+
+            <com.dr.app.widgets.CTextViewjustsport
+                    android:id="@+id/txtEndTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:text="Monday"
+                    android:gravity="right"
+                    android:textColor="@color/textcolor"
+                    android:textSize="12dp"
+                    customfontdemo:fontName="Roboto-Regular.ttf"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+

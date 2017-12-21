@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lnParent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/editprofile_screen"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/txtToast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/notification_accepted"
+        android:visibility="gone" />
+
+    <com.dr.app.utility.PagingListView
+        android:id="@+id/listYourEventNoitification"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.dr.app.utility.PagingListView>
+
+</LinearLayout>

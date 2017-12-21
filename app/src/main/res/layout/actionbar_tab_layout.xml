@@ -1,0 +1,50 @@
+<LinearLayout
+    android:id="@+id/actionbar_root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@drawable/tab"
+    android:orientation="horizontal"
+    android:weightSum="10">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_home_on"
+        android:layout_weight="2"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_message_on"
+        android:layout_weight="2"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/add"
+        android:padding="5dp"
+        android:layout_weight="2"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_notification_on"
+        android:layout_weight="2"/>
+    <ImageView
+        android:id="@+id/ic_menu_user"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_user_on"
+        android:layout_weight="2"/>
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+

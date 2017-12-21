@@ -1,0 +1,57 @@
+<com.nirhart.parallaxscroll.views.ParallaxScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/editprofile_screen"
+    app:parallax_factor="1.9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+
+        <com.dr.app.widgets.CircleImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/profile_preview" />
+
+        <com.dr.app.widgets.CTextViewjustsport
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:textColor="@color/textcolor50transblack"
+            android:text="@string/your_profile_title"
+            android:textSize="28sp" />
+
+        <com.dr.app.widgets.CTextViewjustsport
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="@color/largetextcolor"
+            android:text="@string/your_profile_dis" />
+
+        <com.dr.app.widgets.CButtonViewOpenSans
+            android:id="@+id/btnSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="@string/your_profile_signup_btn"
+            android:background="@drawable/button_selecter"
+            android:textColor="@color/color_black"
+            android:textSize="20dp"
+            android:gravity="center" />
+
+    </LinearLayout>
+</com.nirhart.parallaxscroll.views.ParallaxScrollView>

@@ -1,0 +1,465 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/editprofile_screen"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:id="@+id/actionbar_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_status_bar"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:src="@drawable/back_black" />
+
+        <com.dr.app.widgets.CTextViewjustsport
+            android:id="@+id/edtSearchBar"
+            android:layout_width="0dp"
+            android:layout_height="?android:actionBarSize"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="7"
+            android:gravity="center"
+            android:hint="FILTER RESULTS"
+            android:paddingLeft="10dp"
+            android:textColor="@color/color_black"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:src="@drawable/ic_mic"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lnSelectSport"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:layout_weight="2"
+                android:background="@drawable/fields_base"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp">
+
+                <com.dr.app.widgets.CTextViewjustsport
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:text="SELECT SPORT"
+                    android:textColor="@color/splace_btn_text_hightlight"
+                    android:textSize="17dp"
+                    customfontdemo:fontName="OpenSans-CondBold.ttf" />
+
+                <com.dr.app.widgets.CTextViewjustsport
+                    android:id="@+id/txtSelectSport"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableRight="@drawable/event_arrow"
+                    android:gravity="center|right"
+                    android:text="SELECT SPORT"
+                    android:textColor="@color/textcolor50transblack"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:background="@drawable/fields_base"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <com.dr.app.widgets.CTextViewjustsport
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="DATE"
+                    android:textColor="@color/splace_btn_text_hightlight"
+                    android:textSize="17dp"
+                    customfontdemo:fontName="OpenSans-CondBold.ttf" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fixed_height"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+
+                    <com.dr.app.widgets.CTextViewjustsport
+                        android:id="@+id/txtStartDate"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.95"
+                        android:gravity="center"
+                        android:text="START DATE"
+                        android:textSize="14dp" />
+
+
+                    <com.dr.app.widgets.CTextViewjustsport
+                        android:id="@+id/txtEndDate"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.95"
+                        android:gravity="center"
+                        android:text="END DATE"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:background="@drawable/fields_base"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <com.dr.app.widgets.CTextViewjustsport
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="DAYS"
+                    android:textColor="@color/splace_btn_text_hightlight"
+                    android:textSize="17dp"
+                    customfontdemo:fontName="OpenSans-CondBold.ttf" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/txtSun"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/date_circle"
+                            android:gravity="center"
+                            android:text="SUN"
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/txtMon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/date_circle"
+                            android:gravity="center"
+                            android:text="MON"
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/txtTue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/date_circle"
+                            android:gravity="center"
+                            android:text="TUE"
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/txtWed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/date_circle"
+                            android:gravity="center"
+                            android:text="WED"
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/txtThu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/date_circle"
+                            android:gravity="center"
+                            android:text="THU"
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/txtFri"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/date_circle"
+                            android:gravity="center"
+                            android:text="FRI"
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/txtSat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/date_circle"
+                            android:gravity="center"
+                            android:text="SAT"
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:background="@drawable/fields_base"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:weightSum="10">
+
+                    <com.dr.app.widgets.CTextViewjustsport
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"
+
+                        android:gravity="center|left"
+                        android:text="DISTANCE"
+                        android:textColor="@color/splace_btn_text_hightlight"
+                        android:textSize="17dp"
+                        customfontdemo:fontName="OpenSans-CondBold.ttf" />
+
+                    <com.dr.app.widgets.CTextViewjustsport
+                        android:id="@+id/txtKm"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center|right"
+                        android:text="0 KM"
+                        android:textColor="@color/splace_btn_text_hightlight"
+                        android:textSize="17dp"
+                        customfontdemo:fontName="OpenSans-CondBold.ttf" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+
+                    <!--<com.crystal.crystalrangeseekbar.widgets.CrystalSeekbar-->
+                    <!--android:id="@+id/rangeSeekbar1"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--app:bar_highlight_color="#E07416"-->
+                    <!--/>-->
+
+                    <SeekBar
+                        android:id="@+id/seekDistance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:max="250"
+                        android:maxHeight="5dp"
+                        android:progressDrawable="@drawable/seekbar_progress"
+                        android:thumb="@drawable/drag_btn" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <com.dr.app.widgets.CTextViewjustsport
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="1 km" />
+
+                    <com.dr.app.widgets.CTextViewjustsport
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="250 km" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnLocation"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="100dp"
+                android:background="@drawable/fields_base"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <com.dr.app.widgets.CTextViewjustsport
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="LOCATION"
+                    android:textColor="@color/splace_btn_text_hightlight"
+                    android:textSize="17dp"
+                    customfontdemo:fontName="OpenSans-CondBold.ttf" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fixed_height"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp">
+
+                    <com.dr.app.widgets.CTextViewjustsport
+                        android:id="@+id/txtAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:drawableRight="@drawable/event_arrow"
+                        android:gravity="center|left"
+                        android:text="Select your Location"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="50dp"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <com.dr.app.widgets.CButtonViewOpenSans
+                    android:id="@+id/txtApplyFilter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_selecter"
+                    android:gravity="center"
+                    android:text="APPLY FILTERS"
+                    android:textSize="18dp" />
+
+
+                <com.dr.app.widgets.CButtonViewOpenSans
+                    android:id="@+id/txtClearFilter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_selecter"
+                    android:gravity="center"
+                    android:text="CLEAR FILTERS"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+

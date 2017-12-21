@@ -1,0 +1,173 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_black" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="9" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.dr.app.widgets.CTextViewjustsport
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="60dp"
+                    android:layout_marginTop="60dp"
+                    android:gravity="center"
+                    android:text="@string/registration_label"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="24sp"
+                    customfontdemo:fontName="SFUIDisplay-Light.ttf" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/splace_label_text" />
+
+
+                <LinearLayout
+                    android:id="@+id/spinnerFilter"
+                    android:layout_width="match_parent"
+                    android:layout_height="?android:actionBarSize"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <com.dr.app.widgets.CTextViewjustsport
+                        android:id="@+id/txtCountryName"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8.5"
+                        android:enabled="false"
+                        android:focusable="false"
+                        android:gravity="left|center"
+                        android:text="Country Name"
+                        android:textColor="@color/colorWhite"
+                        customfontdemo:fontName="SFUIDisplay-Light.ttf"
+                        android:textSize="20dp" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:src="@drawable/forword_arrow" />
+
+                </LinearLayout>
+
+                <com.dr.app.widgets.CTextViewjustsport
+                    android:layout_width="match_parent"
+                    android:layout_height="?android:actionBarSize"
+                    android:layout_weight="8.5"
+                    android:drawableRight="@drawable/add"
+                    android:focusableInTouchMode="true"
+                    android:gravity="left|center"
+                    android:text="Country Name"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18dp"
+                    android:visibility="gone" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/splace_label_text" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?android:actionBarSize"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <com.dr.app.widgets.CTextViewjustsport
+                        android:id="@+id/txtPreCode"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text=""
+                        customfontdemo:fontName="SFUIDisplay-Light.ttf"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="24sp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.02"
+                        android:background="@color/splace_label_text" />
+
+                    <com.dr.app.widgets.CEditTextViewjustsport
+                        android:id="@+id/edtPhoneNumber"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="7.98"
+                        android:background="@android:color/transparent"
+                        android:gravity="left|center"
+                        android:hint="Your phone number"
+                        android:inputType="number"
+                        android:maxLength="12"
+                        android:paddingLeft="15dp"
+                        android:textColor="@color/colorWhite"
+                        customfontdemo:fontName="SFUIDisplay-Light.ttf"
+                        android:textColorHint="@color/colorWhite"
+                        android:textSize="24sp"
+                        android:selectAllOnFocus="false"
+                        android:singleLine="true" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/splace_label_text" />
+
+                <com.dr.app.widgets.CButtonViewOpenSans
+                    android:id="@+id/btnSignup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button_selecter"
+                    android:text="@string/splace_sign_up"
+                    android:textColor="@drawable/button_text_selecter"
+                    android:textSize="20dp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>

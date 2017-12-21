@@ -1,0 +1,130 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lnEventLayer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@drawable/event_bg"
+        android:padding="10dp"
+        android:weightSum="10">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5">
+
+            <ImageView
+                android:id="@+id/imgEventPic"
+                android:layout_width="90dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/active_inactive_event_img" />
+
+            <ImageView
+                android:id="@+id/imgActive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-5dp"
+                android:src="@drawable/active"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="6"
+            android:orientation="vertical">
+
+            <com.dr.app.widgets.CTextViewjustsport
+                android:id="@+id/txtEventName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:text="Event Name"
+                android:textColor="@color/textcolor"
+                android:textSize="18dp"
+                customfontdemo:fontName="Roboto-Regular.ttf" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <com.dr.app.widgets.CTextViewjustsport
+                    android:id="@+id/txtEventDateTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:text=""
+                    android:textColor="@color/textopecity"
+                    android:textSize="14dp"
+                    customfontdemo:fontName="Roboto-Regular.ttf" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/v_line" />
+
+                <com.dr.app.widgets.CTextViewjustsport
+                    android:id="@+id/txtEventSport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:fadingEdge="horizontal"
+                    android:lines="1"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:maxLines="1"
+                    android:scrollHorizontally="true"
+                    android:text=""
+                    android:textColor="@color/textopecity"
+                    android:textSize="14dp"
+                    customfontdemo:fontName="Roboto-Regular.ttf" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnAction"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1.5"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/imgEditEvent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:padding="2dp"
+                android:src="@drawable/edit_post"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:id="@+id/imgReEvent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:padding="2dp"
+                android:src="@drawable/repost"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+

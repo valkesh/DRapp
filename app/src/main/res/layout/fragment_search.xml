@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/actionbar_root"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/status_bar"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:src="@drawable/back_black" />
+
+        <com.dr.app.widgets.CEditTextViewjustsport
+            android:id="@+id/edtSearchBar"
+            android:layout_width="0dp"
+            android:layout_height="?android:actionBarSize"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="7"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/search"
+            android:hint="Event Name"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:textColor="@color/color_black"
+            customfontdemo:fontName="OpenSans-CondBold.ttf" />
+
+        <ImageView
+            android:id="@+id/ic_main_search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:src="@drawable/ic_mic"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lnSearchFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/status_bar"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <com.dr.app.widgets.CTextViewjustsport
+            android:id="@+id/txtFilterBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8.5"
+            android:background="@drawable/status_bar"
+            android:gravity="center|left"
+            android:paddingLeft="10dp"
+            android:text="SHOW FILTER"
+            android:textColor="@color/color_black"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:src="@drawable/filter" />
+    </LinearLayout>
+
+    <com.dr.app.utility.PagingListView
+        android:id="@+id/listSearchEvent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
