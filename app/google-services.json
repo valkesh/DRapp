@@ -1,35 +1,27 @@
 {
   "project_info": {
-    "project_number": "173222299108",
-    "firebase_url": "https://justsport-8e76c.firebaseio.com",
-    "project_id": "justsport-8e76c",
-    "storage_bucket": "justsport-8e76c.appspot.com"
+    "project_number": "403281396752",
+    "firebase_url": "https://drapp-c34f7.firebaseio.com",
+    "project_id": "drapp-c34f7",
+    "storage_bucket": "drapp-c34f7.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:173222299108:android:a97af0178d5ae7a1",
+        "mobilesdk_app_id": "1:403281396752:android:6872a07e812f8d22",
         "android_client_info": {
-          "package_name": "com.dr.app"
+          "package_name": "com.doctorapp.android"
         }
       },
       "oauth_client": [
         {
-          "client_id": "173222299108-d2dhqi31cn89kuqlc6hbc6h5k33beuq8.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.dr.app",
-            "certificate_hash": "3A13252EDCB7A91A080D43537E7C359E6E983CC9"
-          }
-        },
-        {
-          "client_id": "173222299108-jfcko2rp93gjno59ugi13hmqvo9oc9tn.apps.googleusercontent.com",
+          "client_id": "403281396752-uaqcc2via2huao4fclu3v7klek3gjssi.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyD1ZURftE1b3cpAQvi_bjSqogFoQM5TSxk"
+          "current_key": "AIzaSyA4FdgIKg7bGFVvMgOc2L6prhNYju-FOuI"
         }
       ],
       "services": {
@@ -37,13 +29,8 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 2,
-          "other_platform_oauth_client": [
-            {
-              "client_id": "173222299108-jfcko2rp93gjno59ugi13hmqvo9oc9tn.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "status": 1,
+          "other_platform_oauth_client": []
         },
         "ads_service": {
           "status": 2
